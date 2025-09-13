@@ -1,0 +1,35 @@
+# محیط مجازی پایتون
+.venv/
+venv/
+
+# فایل‌های پایگاه داده SQLite
+*.sqlite3
+
+# فایل‌های موقتی پایتون
+__pycache__/
+*.py[cod]
+
+# فایل‌های تنظیمات مخفی
+*.env
+
+# فایل‌های مربوط به سیستم‌عامل ویندوز
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# فایل‌های مربوط به VS Code
+.vscode/
+
+# فایل‌های مربوط به migrations
+*/migrations/
+*/migrations/*.py
+*/migrations/*.pyc
+
+# فایل‌های مربوط به لاگ‌ها
+*.log
+
+# فایل‌های مربوط به media
+/media/
+
+# فایل‌های مربوط به static
+/staticfiles/
