@@ -13,7 +13,7 @@ class PostList(ListView):
 class PostDetail(DetailView):
     model = Post
     template_name = 'post_detail.html'
-    context_object_name = 'post'
+    # context_object_name = 'post_list'
 
 class PostCreate(CreateView):
     model = Post

@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
 
 {%block content%}
+{% if user.is_authenticated %}
 
 {% for post in post_list %}
 <div class="post-entry">
 
-  <h2>
-    <a href="{% url 'post_detail' post.pk %}">{{post.title}}</a>
-  </h2>
+    <h2>
+        <a href="{{post.get_absolute_url}}">{{post.title}}</a>
+    </h2>
 </div>
 {% endfor %}
+{% else %}
+<p>please login or signup!!!!!!!</p>
+{% endif %}
 {% endblock content%}
-

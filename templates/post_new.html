@@ -1,9 +1,14 @@
 {%extends 'base.html'%}
 
 {%block content%}
+{% if user.is_authenticated %}
 <form action="" method="post">
     {% csrf_token %}
     {{ form }}
     <input type="submit" value="save">
 </form>
+{% else %}
+<p><a href="{%url 'login'%}"><b>please LOGIN</b></a></p>
+{% endif %}
+
 {%endblock content%}
